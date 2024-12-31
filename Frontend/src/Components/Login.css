@@ -1,0 +1,89 @@
+/* General Container Styling */
+#login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Heading Styling */
+  #login-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input Group Styling */
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .input-field:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #eaf4ff;
+  }
+  
+  /* Button Styling */
+  #login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 480px) {
+    .login-form {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    #login-heading {
+      font-size: 20px;
+    }
+  
+    .input-field {
+      font-size: 14px;
+    }
+  
+    #login-button {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,67 @@
+#fruit-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#fruit-container .fruit-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* Exactly 3 columns */
+  gap: 100px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  row-gap: 50px;
+}
+
+#fruit-container .fruit-card {
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.1), 
+              -4px -6px 15px rgba(255, 255, 255, 0.5);
+  transition: all 0.4s ease;
+  width: 100%;
+  text-align: center;
+}
+
+#fruit-container .fruit-card:hover {
+  transform: translateY(-10px) scale(1.07);
+  box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.15), 
+              -6px -8px 20px rgba(255, 255, 255, 0.6);
+}
+
+#fruit-container .fruit-name {
+  font-size: 24px;
+  color: #43a047; 
+  margin: 15px 0;
+}
+
+#fruit-container .fruit-price {
+  font-size: 20px;
+  color: #e65100; 
+  margin: 8px 0;
+}
+
+#fruit-container .fruit-stock {
+  font-size: 17px;
+  color: #1e88e5; 
+  margin: 8px 0;
+}
+
+@media (max-width: 992px) {
+  #fruit-container .fruit-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  #fruit-container .fruit-list {
+    grid-template-columns: 1fr;
+  }
+}
