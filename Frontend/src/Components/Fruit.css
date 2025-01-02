@@ -19,6 +19,14 @@
   row-gap: 50px;
 }
 
+#fruit-container .fruit-card img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 #fruit-container .fruit-card {
   background: linear-gradient(145deg, #ffffff, #f3f3f3);
   border-radius: 12px;
